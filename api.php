@@ -24,6 +24,8 @@ function getCurrentUTC() {
 if (isset($_GET['slack_name']) && isset($_GET['track'])) {
     $slackName = $_GET['slack_name'];
     $track = $_GET['track'];
+    // $api = $_GET['api'];
+
 
     // Validate track
     if ($track === '') {
@@ -47,8 +49,8 @@ if (isset($_GET['slack_name']) && isset($_GET['track'])) {
         "utc_time" => $currentUTC,
         "track" => $track,
         "track" => $track,
-        "github_file_url" => "https://github.com/Appleeyes/EndPoint-Project/blob/main/endpoint.php",
-        "github_repo_url" => "https://github.com/Appleeyes/EndPoint-Project",
+        "github_file_url" => "https://github.com/prevho/endpoint-hngtask-001/blob/master/endpoint.php",
+        "github_repo_url" => "https://github.com/prevho/endpoint-hngtask-001",
         "status_code" => 200
     ];
 
